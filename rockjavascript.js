@@ -8,13 +8,27 @@
 
 parseFloat(prompt("Enter your choice"))
 
-
 function getComputerChoice(arr){
+const arr = ["Rock", "Paper", "Scissors"];
 const randomIndexChoice = Math.floor(Math.random() * arr.length);
+
 const choice = arr[randomIndexChoice];
 return choice;
 
 }
-const arr = ["Rock", "Paper", "Scissors"];
-const result = getComputerChoice(arr);
-console.log(result);
+const computerSelection = getComputerChoice();
+let result = getComputerChoice(arr);
+let playerSelection = "rock";
+function playRound(playerSelection, computerSelection){
+
+    if (playerSelection("Rock") && computerSelection("Paper") ) ; {
+    return "You Lose";
+}
+}
+
+
+console.log(playRound(playerSelection, computerSelection));
+// if (playerSelection = computerSelection);{
+ //   return "Draw";
+ //const result = getComputerChoice(arr);
+ //
