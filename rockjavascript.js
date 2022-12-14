@@ -7,28 +7,11 @@
 //If User Paper and Computer Rock return Win else lose
 
 parseFloat(prompt("Enter your choice"))
-
-function getComputerChoice(arr){
-const arr = ["Rock", "Paper", "Scissors"];
-const randomIndexChoice = Math.floor(Math.random() * arr.length);
-
-const choice = arr[randomIndexChoice];
-return choice;
-
+let choiceArr = ["Rock", "Paper", "Scissors"];
+function getComputerChoice(choiceArr) {
+    
+    getComputerChoice = Math.floor(Math.random(choiceArr.indexOf()) );
+    return choiceArr.toString();
+    
 }
-const computerSelection = getComputerChoice();
-let result = getComputerChoice(arr);
-let playerSelection = "rock";
-function playRound(playerSelection, computerSelection){
-
-    if (playerSelection("Rock") && computerSelection("Paper") ) ; {
-    return "You Lose";
-}
-}
-
-
-console.log(playRound(playerSelection, computerSelection));
-// if (playerSelection = computerSelection);{
- //   return "Draw";
- //const result = getComputerChoice(arr);
- //
+console.log(getComputerChoice(choiceArr))
