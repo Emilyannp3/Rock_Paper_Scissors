@@ -14,7 +14,6 @@ return playerSelection;
 }
 capitalizeSelection();
 
-
 let choiceArr = ["Rock", "Paper", "Scissors"];
 function getComputerChoice() {
     
@@ -23,7 +22,6 @@ function getComputerChoice() {
     
 }
 let computerSelection = getComputerChoice();
-
 
 function playRound(){
  
@@ -45,10 +43,16 @@ function playRound(){
     }
 
 }
+
+//function game(){
+//for (let i = 0; i < 5; i++){
+//    playRound();
+//}
+//}
+//console.log(game());
+
 console.log(computerSelection);
 console.log(playerSelection);
 
 
 console.log(playRound());
-
-//Make else statements more efficient
