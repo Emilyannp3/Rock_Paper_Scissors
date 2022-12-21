@@ -44,12 +44,16 @@ function playRound(){
 
 }
 
-//function game(){
-//for (let i = 0; i < 5; i++){
-//    playRound();
-//}
-//}
-//console.log(game());
+function game(){
+for (let i = 0; i < 5; i++){
+    prompt("Enter your choice");
+    console.log(playerSelection);
+    computerSelection = getComputerChoice();
+    console.log(computerSelection);
+    console.log(playRound());
+}
+}
+game();
 
 console.log(computerSelection);
 console.log(playerSelection);
