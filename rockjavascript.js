@@ -41,20 +41,27 @@ function playRound(){
   
 }
 
-function game(){
-for (let i = 1; i < 5; i++){
-    prompt("Enter your choice");
-    console.log(playerSelection);
-    computerSelection = getComputerChoice();
-    console.log(computerSelection);
-    console.log(playRound());
+//function game(){
+//for (let i = 1; i < 5; i++){
+  //  prompt("Enter your choice");
+    //console.log(playerSelection);
+    //computerSelection = getComputerChoice();
+    //console.log(computerSelection);
+    //console.log(playRound());
     
-}
-}
-game();
+//}
+//}
+//game();
 
 console.log(computerSelection);
 console.log(playerSelection);
 
 
 console.log(playRound());
+
+const buttons = document.querySelectorAll("button");
+buttons.forEach((button) => {
+ button.addEventListener("click", () => {
+    console.log(playRound());
+ });
+});
