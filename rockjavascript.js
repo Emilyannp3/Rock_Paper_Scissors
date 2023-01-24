@@ -59,9 +59,12 @@ console.log(playerSelection);
 
 console.log(playRound());
 
-const buttons = document.querySelectorAll("button");
-buttons.forEach((button) => {
- button.addEventListener("click", () => {
+
+let btnRock = document.body.querySelector("#rock");
+btnRock.textContent = "Rock";
+console.log(btnRock);
+btnRock.addEventListener("click", function (e) {
     console.log(playRound());
- });
+    console.log(computerSelection);
+    console.log(playerSelection);
 });
