@@ -1,12 +1,20 @@
-//creating rock app
+//figure out how to make playerSelection selectable with 3 choices and without prompt.
+//create 3 buttons
+//have the 3 buttons run playRound on click
 
-let playerSelection = prompt("Enter your choice");
 
-function capitalizeSelection(){
-playerSelection = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase();
-return playerSelection;
-}
-capitalizeSelection();
+
+//function capitalizeSelection(){
+//playerSelection = playerSelection[0].toUpperCase() + playerSelection.substring(1).toLowerCase();
+//return playerSelection;
+//}
+//capitalizeSelection();
+let playerSelectionArray = ["Rock", "Paper", "Scissors"];
+//function getplayerChoice(){
+  //  chosenIndex = playerSelectionArray[indexof().toString()];
+    //return chosenIndex;
+//}
+let playerSelection = playerSelectionArray.indexof();
 
 let choiceArr = ["Rock", "Paper", "Scissors"];
 function getComputerChoice() {
@@ -64,6 +72,15 @@ let btnRock = document.body.querySelector("#rock");
 btnRock.textContent = "Rock";
 console.log(btnRock);
 btnRock.addEventListener("click", function (e) {
+    console.log(playRound());
+    console.log(computerSelection);
+    console.log(playerSelection.indexof(0));
+});
+
+let btnPaper = document.body.querySelector("#paper");
+btnPaper.textContent = "Paper";
+console.log(btnPaper);
+btnPaper.addEventListener("click", function (e) {
     console.log(playRound());
     console.log(computerSelection);
     console.log(playerSelection);
